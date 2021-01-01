@@ -1,0 +1,56 @@
+.addList {
+    padding: 10px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}
+.addList:hover {
+    background: rgba(0,0,0,0.5);
+    transform: scale(1.1);
+}
+.title-task {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.btn{
+    position: relative;
+}
+.btn>.toltip{
+    opacity: 0;
+    top: 0px;
+    position: absolute;
+    transition: top 1s;
+}
+.btn:hover>.toltip {
+    position: absolute;
+    top: -20px;
+    left: calc(80% - 40px);
+    // background: #343a40;
+    color: #fff;
+    padding: 0px 5px;
+    z-index: 5;
+    display: block;
+    transition: top 1s;
+    opacity: 1;
+    width: 58px;
+    font-size: 10px;
+}
+.cir{
+    border-radius: 50%;
+}
+.status {
+    margin: 5px 5px 5px auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+}
+.popAct {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: right;
+}

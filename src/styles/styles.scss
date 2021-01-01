@@ -1,0 +1,166 @@
+@import './facturas/proyectos.scss';
+@for $i from 1 through 100 {
+    .w-#{$i}{
+        width: $i * 1%;
+    }
+    .m-#{$i}{
+        margin: $i * 1px;
+    }
+    .wvh-#{$i}{
+        width: $i * 1vh;
+    }
+    .h-#{$i}{
+        height: $i * 1%;
+    }
+    .vh-#{$i}{
+        height: $i * 1vh;
+    }
+    .hvh-#{$i}{
+        min-height: $i * 1vh;
+        height: max-content;
+    }
+    .ml-#{$i}{
+        margin-left: $i * 1px;
+    }
+    .mr-#{$i}{
+        margin-right: $i * 1px;
+    }
+    .mt-#{$i}{
+        margin-top: $i * 1px !important;
+    }
+    .p-#{$i}{
+        padding: $i * 1px;
+    }
+}
+.ov-auto{
+    overflow: auto;
+}
+.loader {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.spinner{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+.centrar{
+    display: flex;
+    align-items: center;
+}
+.edit{
+    cursor: pointer;
+}
+.pop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+}
+.stiky{
+    position: sticky;
+    top:0px;
+    z-index: 5;
+}
+.infoT {
+    width: max-content;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 5px;
+    font-weight: 700;
+}
+.info {
+    padding: 5px;
+    border-bottom: solid 2px;
+    width: 100%;
+    min-height: 36px;
+}
+.card{
+    box-shadow: 10px 10px 10px -10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #17a2b8; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken($color: #17a2b8, $amount: 1); 
+  }
+.bg-gris{
+    background-color: #ededed;
+}
+.subnav {
+    position: sticky;
+    top: 56px;
+    z-index: 5;
+}
+.buttons-float {
+    position: fixed;
+    right: 3%;
+    top: 63px;
+    z-index: 5;
+}
+.oculto{
+    display: none;
+}
+.pointer{
+    cursor: pointer;
+}
+.userA {
+    background: #6F42D6;
+    padding: 20px;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.close{
+    cursor: pointer;
+}
+.prio {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.Baja{
+    background-color: red;
+}
+.Media{
+    background-color: yellow;
+}
+.Alta{
+    background-color: green;
+}
+@keyframes example {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+@media screen and (max-width: 992px) {
+    .subnav {
+        top: 83px;
+    }
+    .buttons-float {
+        top: 80vh;
+    }
+}
